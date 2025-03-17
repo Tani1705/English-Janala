@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A6-English-Janala</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <nav class="bg-slate-100 fixed top-0 left-0 w-full flex justify-between border-b-2 py-3 px-16 items-center z-50">
+            
+            <!--logo -->
+
+            <div class="text-xl font-bold flex items-center">
+                <span class="gray-800">English</span>
+                <img src="images/logo.png" alt="logo">
+                <span class="text-gray-800 ml-1">জানালা</span>
+            </div>
+          
+            <div class="flex space-x-4">
+                <a href="#faq" class="btn btn-outline text-[#422AD5] border border-[#422AD5] px-4 py-2 rounded-md hover:bg-[#422AD5] group">
+                    <img src="images/fa-circle-question.png" class="filter group-hover:invert group-hover:brightness-0">
+                    FAQ
+                </a>
+                
+                
+                <a href="#Vocabularies" class="btn btn-outline text-[#422AD5] border border-[#422AD5] px-4 py-2 rounded-md hover:bg-[#422AD5] group">
+                    <img src="images/fa-book-open.png" class="filter group-hover:invert group-hover:brightness-0">
+                    Learn
+                </a>
+                
+                <button class="btn btn-outline text-[#422AD5] border border-[#422AD5] px-4 py-2 rounded-md hover:bg-[#422AD5] group">
+                    <img src="images/fa-arrow-right-from-bracket.png" class="filter group-hover:invert group-hover:brightness-0">
+                    Logout
+                </button>
+
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        
+        <div class="w-full  p-8 flex flex-col md:flex-row items-center justify-between">
+        
+            <!-- Left Section -->
+            <div class="md:w-1/2 p-6 max-w-xl ">
+                <h1 class="text-3xl font-bold">
+                    <span class="text-blue-600">English</span> is Easy!!
+                </h1>
+                <p class="text-gray-700 mt-4 leading-20">
+                    আজই থেকে আপনার ভাষা শেখার যাত্রা শুরু করুন! আপনি যদি নতুন হন অথবা 
+                    আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে 
+                    যাবে অন্য একটি Level এ।
+                </p>
+    
+                <!-- Form -->
+                <div class="mt-6">
+                    <input 
+                        type="text" 
+                        placeholder="Enter Your Name" 
+                        class="w-1/2 p-3 border rounded-md mb-3"
+                    />
+                    <input 
+                        type="password" 
+                        placeholder="********" 
+                        class="w-1/2 p-3 border rounded-md mb-3"
+                    />
+                </div>
+                <button class="w-1/4 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+                    Get Started
+                </button>
+            </div>
+    
+            <!-- Right Section-->
+            <div class="md:w-1/2 flex justify-end items-center relative mt-6 md:mt-0">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-40 h-40 bg-blue-100 rounded-full"></div>
+                    <img 
+                    src="images/hero-image.png"
+                    />
+                </div>
+            </div>
+    
+        </div>
+    </header>
+
+    <!-- Vocabularies section -->
+     <section id="Vocabularies" class=" mt-24">
+
+        <div class="w-full p-16 text-center">
+            <h2 class="text-3xl font-bold text-center mb-20">
+                <span class="text-blue-500">Let’s</span> Learn Vocabularies
+            </h2>
+
+            <div id="btn-container" class="mb-12 flex flex-wrap justify-center gap-2">
+                <div>
+                    <!-- <button class="px-4 py-2 border border-[#422AD5] text-[#422AD5] rounded-lg">
+                        <img src="images/fa-book-open.png" class="inline-flex"> Lesson -1
+                    </button> -->
+                </div>
+
+            </div>
+
+            <div class="mb-10 p-16 bg-gray-200 rounded-lg shadow-md">
+                <p class="text-gray-600">আপনি এখনও কোনো Lesson Select করেননি</p>
+                <h3 class="text-lg font-semibold">একটি Lesson Select করুন।</h3>
+            </div>
+        </div>
+        
+     </section>
+
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="FAQ mt-24">
+
+    <div class="w-full p-16 text-black text-lg">
+        <h2 class="text-3xl font-bold text-center mb-20">
+            <span class="text-blue-500">Frequently</span> Asked Questions
+        </h2>
+        <div class="space-y-4">
+            <!-- Question 1 -->
+            <div class="border rounded-lg">
+                <button onclick="toggleAnswer('answer1')" class="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200">
+                    <span>1. The difference between var, let, and const?</span>
+                    <span id="answer1-icon" class="text-xl font-bold">&plus;</span>
+                </button>
+                <div id="answer1" class="hidden p-4 text-gray-800">
+                    <span class="font-bold">var</span> : Function-scoped, hoisted with undefined, re-declarable, mutable.<br>
+                    <span class="font-bold">let</span>: Block-scoped, hoisted but uninitialized, not re-declarable, mutable.<br>
+                    <span class="font-bold">const</span>: Block-scoped, hoisted but uninitialized, not re-declarable, immutable (value can't be reassigned).
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="border rounded-lg">
+                <button onclick="toggleAnswer('answer2')" class="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200">
+                    <span>2. The difference between map(), forEach(), and filter()?</span>
+                    <span id="answer2-icon" class="text-xl font-bold">&plus;</span>
+                </button>
+                <div id="answer2" class="hidden p-4 text-gray-800">
+                    <span class="font-bold">map()</span>: Returns a new array by applying a function to each element.<br>
+                    <span class="font-bold">forEach()</span>: Iterates over elements without returning a new array.<br>
+                    <span class="font-bold">filter()</span>: Returns a new array with elements that pass a given condition.
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="border rounded-lg">
+                <button onclick="toggleAnswer('answer3')" class="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200">
+                    <span>3. Explain arrow functions and how they are different from regular functions? ?</span>
+                    <span id="answer3-icon" class="text-xl font-bold">&plus;</span>
+                </button>
+                <div id="answer3" class="hidden p-4 text-gray-800">
+                    <span>Syntax</span> : Shorter and more readable (const add = (a, b) => a + b;).<br>
+                    <span>this Binding</span> : Lexically binds this (inherits from surrounding scope), unlike regular functions which have their own this.<br>
+                    <span>No arguments Object</span> : Arrow functions don’t have their own arguments, whereas regular functions do.<br>
+                    <span>Implicit Return</span> : Single-expression arrow functions return values without needing return.
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="border rounded-lg">
+                <button onclick="toggleAnswer('answer4')" class="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200">
+                    <span>4.how JavaScript Promises work?</span>
+                    <span id="answer4-icon" class="text-xl font-bold">&plus;</span>
+                </button>
+                <div id="answer4" class="hidden p-4 text-gray-800">
+                    A Promise in JavaScript represents a value that will be available in the future (asynchronous operation). It can be in one of three states:<br>
+                    Pending → Initial state, operation not completed.<br>
+                    Accept → Operation completed successfully.<br>
+                    Rejected → Operation failed.
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="border rounded-lg">
+                <button onclick="toggleAnswer('answer5')" class="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200">
+                    <span>5.how closures work in JavaScript?</span>
+                    <span id="answer5-icon" class="text-xl font-bold">&plus;</span>
+                </button>
+                <div id="answer5" class="hidden p-4 text-gray-800">
+                    A closure is when a function remembers the variables from its outer scope, even after the outer function has finished executing.
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </section>
+
+
+   <!-- footer section -->
+    <footer class="bg-white text-black border-t-2 border-[#f8e0e0] py-6 px-16">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="">
+                <p class="font-semibold text-lg flex items-center">
+                    <span class="gray-800">English</span>
+                <img src="images/logo.png" alt="logo">
+                <span class="text-gray-800 ml-1">জানালা</span>
+                </p>
+                <p class="mt-1">ইংরেজি শিক্ষার সঙ্গী</p>
+                <p class="text-sm">Providing ED-Tech Applications since 2025</p>
+            </div>
+            
+            <div>
+                <p class="mb-2 font-semibold">FOLLOW US</p>
+                <div class="flex space-x-4 text-3xl">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script/index.js"></script>
+</body>
+</html>
